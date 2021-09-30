@@ -1,7 +1,7 @@
 self.addEventListener('push', function(e) {
   var options = {
-    body: 'This notification was generated from a push!',
-    icon: 'images/example.png',
+    body: 'A This notification was generated from a push!',
+    icon: 'https://apsissolutions.com/wp-content/uploads/2021/02/APSIS-Solutions-Header-Logo.png',
     vibrate: [100, 50, 100],
     data: {
       dateOfArrival: Date.now(),
@@ -9,9 +9,9 @@ self.addEventListener('push', function(e) {
     },
     actions: [
       {action: 'explore', title: 'Explore this new world',
-        icon: 'images/checkmark.png'},
+        icon: 'https://apsissolutions.com/wp-content/uploads/2021/02/APSIS-Solutions-Header-Logo.png'},
       {action: 'close', title: 'Close',
-        icon: 'images/xmark.png'},
+        icon: 'https://apsissolutions.com/wp-content/uploads/2021/02/APSIS-Solutions-Header-Logo.png'},
     ]
   };
   e.waitUntil(
